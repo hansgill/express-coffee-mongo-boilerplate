@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html class="wf-proximanova-n3-active wf-proximanova-n4-active wf-proximanova-i4-active wf-proximanova-n7-active wf-proximanova-i7-active wf-active"><head><%- include head.html%></head>
+  <script>
+    function updateVal(value) {
+      $('#amount').val(value).addClass('active');
+    }
+  </script>
+  <body>
+    <div class="container">
+      <p>Create a monthly contribution to your personal fund below!</p>
+      <form role="form" action="/api/checkout/do_payment" method="post">
+        <div class="form-group">
+          <a class="btn btn-lg btn-info" style="margin-top:20px;" onclick="updateVal(20)">$20</a>
+          <a class="btn btn-lg btn-info" style="margin-top:20px;" onclick="updateVal(50)">$50</a>
+          <a class="btn btn-lg btn-info" style="margin-top:20px;" onclick="updateVal(100)">$100</a>
+          <input type="hidden" class="form-control" id="amount" name="amount">
+        </div>
+        <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" align="left" style="margin-right:7px;" alt="submit">
+      </form>
+    </div>
+  </body>
+</html>

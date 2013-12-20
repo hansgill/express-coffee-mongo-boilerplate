@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="wf-proximanova-n3-active wf-proximanova-n4-active wf-proximanova-i4-active wf-proximanova-n7-active wf-proximanova-i7-active wf-active"><head><%- include head.html%>
+<style type="text/css">
+	img  {max-width: 90%;}
+</style>
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true">
+	<div class="container">
+	 	<%- include header.html %>
+	 	<%- include donationFund.html %>
+	 	<div class="well-small panel panel-primary">
+    	<div class="panel-heading">Browse Campaigns</div>
+    </div>
+    <%for(i=0; campaigns!=null && i<campaigns.length; i++){%>
+	    <div class="well-small panel panel-primary">
+	    	<div class="panel-body">
+	    		<div class="panel-body">
+	    			<div class="col-xs-4 col-sm-4"><img src="<%=campaigns[i].pics[0]%>" style="width:100px;"/></div>
+	    		</div>
+	      	<div class="row">
+	      		<div class="col-xs-12 col-sm-12">
+	      			<p>
+	      				<%=campaigns[i].description.substring(0,200)%> <a href="#">More</a>
+	      			</p>
+	      			<div style="text-align:center;">
+	      				<a class="btn btn-small btn-danger donate" href="#" data-campaign-id="<%=campaigns[i]._id%>">Donate</a>
+	      			</div>
+	      		</div>
+	      	</div>
+	    	</div>
+	    </div>
+	   <%}%>
+	</div>
+
+
+</body></html>
