@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
+#example of a script you can put in here.
+#these scripts must be compiled manually (coffee -c [script-name])
+
 util = require("util")
 mongoose = require("mongoose")
 async = require("async")
