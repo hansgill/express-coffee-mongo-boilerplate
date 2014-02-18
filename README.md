@@ -14,11 +14,12 @@ ExpressJS CoffeeScript Mongodb Boilerplate code. This repo lets you get up and r
 
 At the minimum make changes to the following two properties in config.json or {environment}-conf.json (environment is recommended)
 
-**"app_id" : "{Name of your App}"**
+*"app_id" : "{Name of your App}"*
 
-**"port" : {port you want the server to run on}**
+*"port" : {port you want the server to run on}*
 
-**Make sure the mongo property is pointing to the correct server**
+
+*Make sure the mongo property is pointing to the correct server*
 
 
 
