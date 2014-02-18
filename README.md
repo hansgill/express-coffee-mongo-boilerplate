@@ -37,13 +37,13 @@ At the minimum make changes to the following two properties in config.json or {e
   
   Ex: NODE_ENV=production nodemon bin/server
 
-  will mean the properties from config.json will be loaded followed by production-conf.json.
+  will load properties from config.json followed by production-conf.json. *Any properties with similar names in production-confi.json will take precedence over config.json
 
 ## License 
 
 The MIT License (MIT)
 
-Copyright (c) <2014> <copyright Hans Gill>
+Copyright (c) 2014 Hans Gill
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
