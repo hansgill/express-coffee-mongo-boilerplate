@@ -1,7 +1,7 @@
 
 
 
-#express-coffee-mongo-boilerplate by Hans Gill
+##express-coffee-mongo-boilerplate by Hans Gill
 
 ExpressJS CoffeeScript Mongodb Boilerplate code.
 
