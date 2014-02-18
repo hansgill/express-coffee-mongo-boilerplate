@@ -3,7 +3,7 @@
 
 ##express-coffee-mongo-boilerplate by Hans Gill
 
-ExpressJS CoffeeScript Mongodb Boilerplate code.
+ExpressJS CoffeeScript Mongodb Boilerplate code. This repo lets you get up and running in no time and focus on building a node based app using coffeescript, mongo and expressJS
 
 ##Configuration
 
