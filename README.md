@@ -37,7 +37,7 @@ At the minimum make changes to the following two properties in config.json or {e
   
   Ex: NODE_ENV=production nodemon bin/server
 
-  will load properties from config.json followed by production-conf.json. *Any properties with similar names in production-confi.json will take precedence over config.json*
+  will load properties from config.json followed by production-conf.json. *Any properties with similar names in {environment}-config.json will take precedence over config.json*
 
 ## License 
 
