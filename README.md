@@ -7,7 +7,7 @@ express-coffee-mongo-boilerplate
 
 ExpressJS  CoffeeScript Mongodb Boilerplate code.
 
-Configuration
+###Configuration
 
 "app_id" : "{Name of your App",
 
@@ -19,7 +19,7 @@ Configuration
   env/{environment}-conf.json or config.json
 
 
-Starting the server
+###Starting the server
 
 1) npm install
 
