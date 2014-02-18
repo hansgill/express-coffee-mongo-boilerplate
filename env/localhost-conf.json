@@ -14,7 +14,7 @@
   },
   
   "static_assets" : {
-    "base": "static.hsgill",
+    "base": "static.boilerplate",
     "url": "https://s3.amazonaws.com/boilerplate"
   },
 
