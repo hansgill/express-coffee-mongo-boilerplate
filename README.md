@@ -1,6 +1,4 @@
 
-
-
 ##express-coffee-mongo-boilerplate by Hans Gill
 
 ExpressJS CoffeeScript Mongodb Boilerplate code. This repo lets you get up and running in no time and focus on building a node based app using coffeescript, mongo and expressJS
@@ -22,31 +20,30 @@ At the minimum make changes to the following two properties in config.json or {e
 *Make sure the mongo property is pointing to the correct server*
 
 
-
-
-
-
 ##Starting the server
 
 1) Install all the node packages managed by npm via package.json
   
-    **npm install**
+    npm install
 
 2) Install all the browser components managed by bower via bower.json
 
-    **bower install**
+    bower install
 
 3) Build the project and start watching the files for changes
 
-    **make watch**
+    make watch
 
-4) Open up a new console tab and nodemon bin/server
+4) Open up a new console tab type
+    
+    nodemon bin/server
 
   * to run in difference environment just pass NODE_ENV={environment}.
   
-  Ex: NODE_ENV=production nodemon bin/server
+    Ex: NODE_ENV=production nodemon bin/server
 
-  will load properties from config.json followed by production-conf.json. *Any properties with similar names in {environment}-config.json will take precedence over config.json*
+  This will load properties from config.json followed by production-conf.json. *Any properties with similar names in {environment}-config.json will take precedence over config.json*
+
 
 ## License 
 
