@@ -5,19 +5,19 @@ ExpressJS CoffeeScript Mongodb Boilerplate code. This repo lets you get up and r
 
 ##Configuration
 
-* Config.json is the system wide settings. If you have more than one environment then that environment file will supercede the same setting in config.json
+Config.json is the system wide settings. If you have more than one environment then that environment file will supercede the same setting in config.json
 
-* to make changes to configuration you can update two files.
-  env/{environment}-conf.json or config.json
+To make changes to configuration you can update two files.
+
+    env/{environment}-conf.json or config.json
 
 At the minimum make changes to the following two properties in config.json or {environment}-conf.json (environment is recommended)
 
-*"app_id" : "{Name of your App}"*
+1) "app_id" : "{Name of your App}"*
 
-*"port" : {port you want the server to run on}*
+2) "port" : {port you want the server to run on}*
 
-
-*Make sure the mongo property is pointing to the correct server*
+* Make sure the mongo property is pointing to the correct server*
 
 
 ##Starting the server
