@@ -1,4 +1,4 @@
-PROJECT = boilerplate
+PROJECT = babyduty
 PROJECT_DIR = $(shell pwd)
 
 TESTTIMEOUT = 5000
@@ -42,11 +42,12 @@ JS_UI_BUILD = lib/server/public/js
 
 JS_UI_FINAL = $(JS_UI_BUILD)/$(PROJECT).build.js
 
-JS_UI_LIB_SRC = $(BOWER_COMPONENTS)
-
-UI_LIB_TARGETS = 	jquery/jquery.min.js \
+UI_LIB_TARGETS = 	jquery/dist/jquery.min.js \
 									bootstrap/dist/js/bootstrap.js
 
+JS_CUSTOM_COMPONENTS = src/static/js
+
+JS_CUSTOM_COMPONENTS_TARGETS = 
 
 
 COFFEE_UI_TARGETS =	 `find $(COFFEE_UI_SRC) -name \*.coffee | sort`
@@ -62,15 +63,27 @@ build-ui:
 	@mkdir -p $(JS_UI_BUILD) && mkdir -p $(TMP_BUILD)
 	@cp -r $(IMG_SRC) $(IMG_BUILD)
 	
+	#package coffee front end code
 	@coffee -c -o $(TMP_BUILD) $(COFFEE_UI_TARGETS)
 	@awk 'FNR==1{print ""}1' $(COFFEE_UI_TARGETS) > $(TMP_BUILD)/ui.build.coffee
 	@coffee -c -o $(TMP_BUILD) $(TMP_BUILD)/ui.build.coffee
 
+	#package bower components
 	@for file in $(UI_LIB_TARGETS) ; do \
-		cat $(addprefix $(JS_UI_LIB_SRC)/, $$file) ; \
+		cat $(addprefix $(BOWER_COMPONENTS)/, $$file) | sed -e "s/\@@STATICDOMAIN/$(STATIC_DOMAIN)/" ; \
 		echo ; \
 	done > $(TMP_BUILD)/libs.js
-	@cat $(TMP_BUILD)/libs.js $(TMP_BUILD)/ui.build.js  > $(JS_UI_FINAL)
+
+	#package custom js components
+	@for file in $(JS_CUSTOM_COMPONENTS_TARGETS) ; do \
+		cat $(addprefix $(JS_CUSTOM_COMPONENTS)/, $$file) | sed -e "s/\@@STATICDOMAIN/$(STATIC_DOMAIN)/" ; \
+		echo ; \
+	done > $(TMP_BUILD)/custom_libs.js
+
+	#package the previous libraries into one file.
+	@cat $(TMP_BUILD)/libs.js $(TMP_BUILD)/custom_libs.js $(TMP_BUILD)/ui.build.js  > $(JS_UI_FINAL)
+
+	#done with front end javascript packaging
 	
 	#BUILD BOWER AND OWN CSS INTO FINAL CSS and then remove the tmp folder
 	@mkdir -p $(CSS_BUILD)
