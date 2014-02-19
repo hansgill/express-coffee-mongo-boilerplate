@@ -28,11 +28,19 @@ At the minimum make changes to the following two properties in config.json or {e
 
 ##Starting the server
 
-1) npm install
+1) Install all the node packages managed by npm via package.json
+  
+    **npm install**
 
-2) make watch
+2) Install all the browser components managed by bower via bower.json
 
-3) Open up a new console tab and nodemon bin/server
+    **bower install**
+
+3) Build the project and start watching the files for changes
+
+    **make watch**
+
+4) Open up a new console tab and nodemon bin/server
 
   * to run in difference environment just pass NODE_ENV={environment}.
   
