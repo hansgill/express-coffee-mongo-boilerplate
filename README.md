@@ -33,7 +33,7 @@ At the minimum make changes to the following two properties in config.json or {e
     <link href="css/boilerplate.css" rel="stylesheet">
     <script src="js/boilerplate.build.js" type="text/javascript"></script>
 
-3) Rename boilerplate.css to projectName.css (same name you have in makefile)
+3) Rename src/static/css/boilerplate.css to projectName.css (same name you have in makefile)
 
 4) Install node packages managed by npm via package.json and browser components managed by bower via bower.json
   
