@@ -23,6 +23,7 @@ Icon?
 # Packages #
 *.7z
 *.tar
+/bower_components
 /node_modules
 # Logs and databases #
 *.gz

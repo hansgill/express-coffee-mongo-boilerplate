@@ -27,7 +27,7 @@
     "nconf": "*",
     "mongoose": "3.8.x",
     "mongodb": "*",
-    "nodemon": "*",
+    "nodemon": "0.7.10",
     "connect-mongo": "*",
     "mongo-store": "*",
     "uglify-js": "*",
