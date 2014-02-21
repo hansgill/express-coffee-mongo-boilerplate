@@ -120,7 +120,7 @@ build-dev: build-ui build-app build-shared
 build-prod: build-ui build-app build-shared min
 
 watch: build-dev
-	node ./node_modules/nodemon/bin/nodemon --watch src -x "make build-dev -f" Makefile
+	node ./node_modules/nodemon/nodemon --watch src -x "make build-dev -f" Makefile
 
 min-js:
 	@./node_modules/uglify-js/bin/uglifyjs -nc -o $(JS_UI_FINAL) $(JS_UI_FINAL)
