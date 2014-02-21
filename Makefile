@@ -1,4 +1,4 @@
-PROJECT = babyduty
+PROJECT = boiilerplate
 PROJECT_DIR = $(shell pwd)
 
 TESTTIMEOUT = 5000
@@ -54,6 +54,7 @@ COFFEE_UI_TARGETS =	 `find $(COFFEE_UI_SRC) -name \*.coffee | sort`
 										
 install:
 	npm install
+	bower install
 
 version:
 	@echo $(VERSION)

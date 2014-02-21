@@ -22,27 +22,24 @@ At the minimum make changes to the following two properties in config.json or {e
 
 ##Starting the server
 
-1) Install all the node packages managed by npm via package.json
-  
-    npm install
-
-2) Install all the browser components managed by bower via bower.json
-
-    bower install
-
-3) Update name of the project in Makefile. This will also be the name of the packaged js and css files.
+1) Update name of the project in Makefile. This will also be the name of the packaged js and css files.
+    
     Project = Your project name here (no spaces allowed)
 
-4) Replace boilerplate in head.html file with name of project for js and css files. This files are automatically created in the lib/server/public folder.
+2) Replace boilerplate text in head.html file with name of project for js and css files. These files are automatically created in the lib/server/public folder.
 
     <link href="css/boilerplate.css" rel="stylesheet">
     <script src="js/boilerplate.build.js" type="text/javascript"></script>
 
-5) Build the project and start watching the files for changes
+3) Install node packages managed by npm via package.json and browser components managed by bower via bower.json
+  
+    make install
+
+4) Build the project and start watching the files for changes
 
     make watch
 
-6) Open up a new console tab type
+5) Open up a new console tab type
     
     nodemon bin/server
 
