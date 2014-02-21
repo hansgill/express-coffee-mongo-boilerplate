@@ -26,7 +26,10 @@ At the minimum make changes to the following two properties in config.json or {e
     
     Project = YourprojectNameHere (no spaces allowed)
 
-    CSS_TARGETS = YourProjectNameHere (no spaces allowed)
+    CSS_TARGETS = YourProjectNameHere.css (no spaces allowed) We can add more custom css files here
+    ex: CSS_TARGETS =   projeet.css \
+                        file.css \
+                        more.css
 
 2) Replace boilerplate text in head.html file with name of project for js and css files. These files are automatically created in the lib/server/public folder.
 
