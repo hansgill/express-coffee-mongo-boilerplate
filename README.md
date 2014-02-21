@@ -22,7 +22,7 @@ At the minimum make changes to the following two properties in config.json or {e
 
 ##Starting the server
 
-1) Replace boilerplate text with name of project (nospaces allowed)
+1) Replace boilerplate text in Makefile, with name of project (nospaces allowed)
     
     Project = YourprojectNameHere (no spaces allowed)
 
@@ -33,7 +33,7 @@ At the minimum make changes to the following two properties in config.json or {e
     <link href="css/boilerplate.css" rel="stylesheet">
     <script src="js/boilerplate.build.js" type="text/javascript"></script>
 
-3) Renamte boilerplate.css to projectName.css (same name you have in makefile)
+3) Rename boilerplate.css to projectName.css (same name you have in makefile)
 
 4) Install node packages managed by npm via package.json and browser components managed by bower via bower.json
   

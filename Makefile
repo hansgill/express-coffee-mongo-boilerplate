@@ -1,4 +1,4 @@
-PROJECT = boiilerplate
+PROJECT = boilerplate
 PROJECT_DIR = $(shell pwd)
 
 TESTTIMEOUT = 5000
