@@ -27,7 +27,7 @@ At the minimum make changes to the following two properties in config.json or {e
     Project = YourprojectNameHere (no spaces allowed)
 
     CSS_TARGETS = YourProjectNameHere.css (no spaces allowed) We can add more custom css files here
-    ex: CSS_TARGETS =   projeet.css \
+    ex: CSS_TARGETS =   project.css \
                         file.css \
                         more.css
 
