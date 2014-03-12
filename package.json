@@ -36,7 +36,9 @@
     "underscore.string": "latest",
     "winston": "*",
     "ejs-locals": "*",
-    "consolidate": "*"
+    "consolidate": "*",
+    "passport" : "*",
+    "passport-http-bearer": "*"
   },
   "devDependencies": {
     "coffee-script": ">=1.3",

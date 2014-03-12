@@ -35,5 +35,8 @@
   },
 
   "title" : "boilerplate",
-  "info-email" : "info@app.com"
+  "info-email" : "info@app.com",
+
+  "enableBasicAuth" : false,
+  "protectAPI" : false
 }

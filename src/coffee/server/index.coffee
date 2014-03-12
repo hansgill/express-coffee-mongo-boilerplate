@@ -7,13 +7,14 @@ app         = express()
 server      = require('http').createServer app
 MongoStore  = require('connect-mongo')(express)
 cons        = require("consolidate")
-
+passport    = require "passport"
 
 app.configure () ->
   app.engine '.html', cons.ejs
   app.engine '.json', cons.ejs
   app.set 'views', __dirname + '/views'
   app.set 'view engine', 'html'
+  app.use passport.initialize()
   app.use express.bodyParser()
   app.use express.methodOverride()
   app.use express.static __dirname + '/public'
