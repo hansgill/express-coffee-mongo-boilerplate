@@ -34,7 +34,7 @@ module.exports = (app) ->
       return callback null
       #return callback err,user
 
-    app.post "/auth/login", basicAuth, (req,res)->
+    app.get "/auth/login", basicAuth, (req,res)->
       #this user comes from express.basicAuth call above.
       res.send
         token : req.user.token
