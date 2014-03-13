@@ -1,17 +1,17 @@
 {
-  "name": "simplyMatchME",
+  "name": "boilerplate",
   "version": "0.0.1",
   "private": true,
-  "description": "simplyMatchME",
+  "description": "boilerplate",
   "keywords": [
     "simplyMatchME"
   ],
-  "author": "Hans Gill <hans@simplymatchme.com>",
+  "author": "Hans Gill <hansgill@gmail.com>",
   "main": "index",
   "contributors": [
     {
       "name": "Hans Gill",
-      "email": "hans@simplymatchme.com"
+      "email": "hansgill@gmail.com"
     }
   ],
   "scripts": {
